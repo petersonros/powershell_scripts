@@ -1,6 +1,0 @@
-Processador: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz
-Memória RAM Total: 16 GB
-Disco: NVMe KINGSTON RBUSNS8 - HDD
-Capacidade: 476.94 GB
-Disco: ST750LM022 HN-M750MBB - HDD
-Capacidade: 698.64 GB

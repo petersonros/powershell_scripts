@@ -1,6 +1,6 @@
 # Define o nome do arquivo e o caminho no servidor remoto
 # $caminhoRemoto = "\\Servidor\Compartilhamento\info_hardware_$env:COMPUTERNAME.txt"
-$caminhoRemoto = "d:\powershell\info_hardware_$env:COMPUTERNAME.txt"
+$caminhoRemoto = "..\scripts_info\info_hardware_$env:COMPUTERNAME.txt"
 
 # Coleta as informações de hardware
 $cpu = Get-WmiObject -Class Win32_Processor | Select-Object -Property Name, NumberOfCores, NumberOfLogicalProcessors

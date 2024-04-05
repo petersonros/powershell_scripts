@@ -1,9 +1,10 @@
-# Coleta informações básicas do sistema
+# Obtem informações do sistema
 $computerInfo = Get-WmiObject -Class Win32_ComputerSystem
 
 # Exibe o fabricante e o modelo do computador
 Write-Host "Fabricante: $($computerInfo.Manufacturer)"
 Write-Host "Modelo: $($computerInfo.Model)"
+Write-Host "Name: $($computerInfo.Name)"
 
 # Coleta informações do processador
 $processorInfo = Get-WmiObject -Class Win32_Processor
