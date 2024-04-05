@@ -1,0 +1,17 @@
+Informações de Hardware do PC: X512FJ
+
+Processador: Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+Núcleos: 4
+Processadores Lógicos: 8
+
+RAM Total: 8GB
+
+Disco(s):
+WDC WDS500G2B0C-00PXH0 - Fixed hard disk media - 465.76GB
+ WDC WD10SPZX-80Z10T2 - Fixed hard disk media - 931.51GB
+
+
+Placa(s) de Vídeo:
+Intel(R) UHD Graphics 620 - Intel(R) UHD Graphics Family
+ NVIDIA GeForce MX230 - NVIDIA GeForce MX230
+
