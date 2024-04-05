@@ -5,6 +5,7 @@ Núcleos: 4
 Processadores Lógicos: 8
 
 RAM Total: 8GB
+Frequência: @{ConfiguredClockSpeed=2400} GHz
 
 Disco(s):
 WDC WDS500G2B0C-00PXH0 - Fixed hard disk media - 465.76GB
