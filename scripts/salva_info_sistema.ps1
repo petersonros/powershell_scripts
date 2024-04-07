@@ -1,12 +1,15 @@
-# Define o caminho do arquivo onde as informações serão salvas
-$caminhoArquivo = "d:\info_discos.txt"
+# Get hostname
+$nomeDoPC = $env:COMPUTERNAME
 
-# Certifica-se de que o arquivo está vazio antes de começar a escrever
+# Define file path
+$caminhoArquivo = "..\machines\$nomeDoPC.txt"
+
+# make sure the file is empty
 if (Test-Path $caminhoArquivo) {
     Remove-Item $caminhoArquivo
 }
 
-# Captura as informações de cada disco físico
+# get disk info
 $discosFisicos = Get-PhysicalDisk
 
 foreach ($disco in $discosFisicos) {
@@ -14,11 +17,11 @@ foreach ($disco in $discosFisicos) {
     $idDisco = $disco.DeviceID
     "Disco ID: $idDisco - Tipo: $tipoDisco" | Out-File -FilePath $caminhoArquivo -Append
 
-    # Encontra as partições para cada disco físico baseando-se no número do disco
+    # find disk partition
     $particoes = Get-Partition | Where-Object { $_.DiskNumber -eq $idDisco }
 
     foreach ($particao in $particoes) {
-        # Usa o identificador da partição para encontrar o volume correspondente
+        # use id partition to find disk
         $volume = Get-Volume | Where-Object { $_.UniqueId -like "*$($particao.GUID)*" }
 
         if ($volume) {
@@ -35,3 +38,4 @@ foreach ($disco in $discosFisicos) {
         }
     }
 }
+
