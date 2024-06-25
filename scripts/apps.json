@@ -1,0 +1,7 @@
+{
+  "source": "winget",
+  "packages": [
+    { "id": "Google.Chrome" },
+    { "id": "Adobe.Acrobat.Reader.64-bit" }
+  ]
+}
